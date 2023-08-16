@@ -20,7 +20,7 @@ for tc in range(1,t+1):
         # j가 가 돌때까지의 합을 구해서 최대 최솟 값을 구할거예요
         for j in range(i,i+m):
             sum_thing += ai[j]
-
+        
         # sumthing과 같은 라인에 있어야 포문이 다 돌고난 이후의 값을
         # 얻어올 수 있어요
         if sum_thing <min_val:
@@ -29,7 +29,8 @@ for tc in range(1,t+1):
         if sum_thing > max_val:
             max_val = sum_thing
     # 최대 최솟값이 구해진 후에 합산값을 구해요 
-    sum_val = max_val - min_val
+    sum_val = max_val -  min_val
     #조건에 맞게 답을 출력해줘요
-    print(f"#{tc} {sum_val}")
+    print(f"#{tc} {sum_val}") 
 
+# 달력값을 변경해야해요
