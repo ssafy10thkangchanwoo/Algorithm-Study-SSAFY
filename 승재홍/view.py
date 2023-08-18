@@ -8,7 +8,7 @@ sys.stdin = open('input.txt','r')
 
 for tc in range(1,11):
     n = int(input())
-    height = list(map(int, input().split()))
+    height = list(map(int, input().split())) # 빌딩 높이
 
 
     # 조망권
