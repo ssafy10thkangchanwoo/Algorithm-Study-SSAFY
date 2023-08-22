@@ -1,3 +1,5 @@
+
+
 T = int(input())
 for tc in range(1, T+1):
     N, M = map(int, input().split())  # N: 정수 개수, M: 구간 개수
