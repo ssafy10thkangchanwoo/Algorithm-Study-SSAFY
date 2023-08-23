@@ -1,7 +1,7 @@
 # SSAFY Python Algorithm Study
 
 ## 📝 Rule
-- 스터디 일정 : 
+- 스터디 일정 : 주 1~2회 온라인/오프라인
 - 주 5회 이상 SWEA 문제 풀이
 
 ## 💎 참여 방법
