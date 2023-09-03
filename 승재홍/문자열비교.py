@@ -1,25 +1,33 @@
+# 문자열 비교
+
+# text안에 pattern이 있냐?
+# 있으면 1, 없으면 0 출력
 
 import sys
 sys.stdin = open('input.txt', 'r')
 
 T = int(input())
 for tc in range(1, T+1):
-    target = input()
-    text = input()
+    pattern = input() # 찾는 것
+    text = input() # 문자열
 
-    cnt = 0
-    for i in range(len(text)):
+    ti = pi = 0 # 패턴, text의 idx
+
+    answer = 1
+
+    while ti < len(text) and pi < len(pattern):
+
+        if text[ti] == pattern[pi]:
+            ti += 1
+            pi += 1
         
-        for j in range(len(target)):
-            if text[i] == target[j]:
-                
-                for k in range(len(target)):
-
-                    if text[i:i+k] == target[j:j+k]:
-                        cnt = 1
-                    else:
-                        cnt = 0
-                            
+        else:
+            ti = ti - pi + 1
+            pi = 0
+    if pi == len(pattern):
+        answer = 1
+    else:
+        answer = 0
     
-    print(f'#{tc} {cnt}')
+    print(f'#{tc} {answer}')
                         
